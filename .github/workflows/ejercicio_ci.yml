@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-          MySQL-version: [14.9, 15] 
+          MySQL-version: [5.7,8.0] 
     services:
       mysql:
         image: mysql:${{ matrix.MySQL-version }} 
